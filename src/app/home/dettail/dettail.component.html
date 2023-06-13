@@ -1,4 +1,8 @@
 <p>dettail works!</p>
 <div *ngIf="dettail">
   <h1> {{ dettail.titolo }} </h1>
+  <img [src]="dettail.image" alt="">
+  <h3>{{ dettail.categoria }}</h3>
+  <p> {{ dettail.descrizione}} </p>
+  <p> <strong>{{ dettail.prezzo}}</strong> </p>
 </div>
