@@ -30,6 +30,25 @@ export class DataService {
       })
     );
   }
+
+  getProductById(id: number) {
+    const url = `${this.url}/${id}`;
+    return this.http.get<any>(url).pipe(
+      map((response: any) => {
+        const prodottoVetrina = {
+          id: response.id,
+          titolo: response.title,
+          prezzo: response.price,
+          descrizione: response.description,
+          categoria: response.category,
+          image: response.image
+        };
+
+        return prodottoVetrina as AllProducts;
+      })
+    );
+  }
+
 }
 
 
