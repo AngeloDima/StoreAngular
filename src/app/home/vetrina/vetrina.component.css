@@ -1,4 +1,21 @@
-img{
-  max-width: 200px;
-  max-height: 200px;
+
+
+.box{
+  width: 350px;
+  height: 100%;
+  background-color: rgba(0, 255, 30, 0.378);
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box img{
+  height: 150px;
+  width: 170px;
+}
+
+h1{
+  font-size: 1.5rem;
 }

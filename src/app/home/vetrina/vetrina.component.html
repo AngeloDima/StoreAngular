@@ -1,8 +1,8 @@
-<div *ngIf="p">
+<div *ngIf="p" class="box">
   <a routerLink="products/{{p.id}}">
     <h1>{{ p.titolo }}</h1>
   </a>
-  <p>{{ p.prezzo }}</p>
   <img [src]="p.image" alt="">
-  <hr>
+  <p>{{ p.prezzo }}</p>
+
 </div>
