@@ -20,8 +20,6 @@ export class DataService {
             id: item.id,
             titolo: item.title,
             prezzo: item.price,
-            descrizione: item.description,
-            categoria: item.category,
             image: item.image
           };
 

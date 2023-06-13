@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/data.service';
-import { AllProducts } from 'src/app/models/all-products';
+import { AllProducts, DettailProduct } from 'src/app/models/all-products';
 
 @Component({
   selector: 'app-dettail',
@@ -9,7 +9,7 @@ import { AllProducts } from 'src/app/models/all-products';
   styleUrls: ['./dettail.component.css']
 })
 export class DettailComponent implements OnInit {
-  dettail?: AllProducts;
+  dettail?: DettailProduct;
 
   constructor(private apiServ: DataService, private route: ActivatedRoute) { }
 
@@ -17,7 +17,7 @@ export class DettailComponent implements OnInit {
     this.route.params.subscribe(params => {
       const id = params['id'];
 
-      this.apiServ.getProductById(id).subscribe((prodotto: AllProducts) => {
+      this.apiServ.getProductById(id).subscribe((prodotto: DettailProduct) => {
         this.dettail = prodotto;
         console.log(this.dettail);
       });
