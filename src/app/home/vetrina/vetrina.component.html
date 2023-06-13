@@ -1,5 +1,7 @@
 <div *ngIf="p">
-  <h1>{{ p.titolo }}</h1>
+  <a routerLink="products/{{p.id}}">
+    <h1>{{ p.titolo }}</h1>
+  </a>
   <h3>{{ p.categoria }}</h3>
   <p>{{ p.prezzo }}</p>
   <hr>
