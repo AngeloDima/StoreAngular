@@ -24,3 +24,4 @@ export class DettailComponent implements OnInit {
     });
   }
 }
+

@@ -23,3 +23,21 @@
   height: 60%;
   background-color: rgb(0, 255, 106);
 }
+
+h1{
+  font-family: roboto;
+  letter-spacing: 5px;
+}
+
+h3{
+  font-family: roboto;
+  letter-spacing: 3px;
+  margin: 20px 0px;
+  font-weight: 400;
+}
+
+.descrizione{
+  font-family: roboto;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
