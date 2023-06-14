@@ -1,21 +1,38 @@
 
 
+
+
 .box{
   width: 350px;
-  height: 100%;
-  background-color: rgba(0, 255, 30, 0.378);
-  border: 3px solid black;
+  height: 95%;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(236, 236, 236);
+  box-shadow: 3px 3px 6px 0px #0000001a;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  z-index: 200;
 }
 
+
 .box img{
-  height: 150px;
+  height: 140px;
   width: 170px;
 }
 
 h1{
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-family: Roboto;
+  font-weight: 500;
 }
+
+a{
+  text-decoration: none;
+  color: #252525;
+
+}
+
+
+
