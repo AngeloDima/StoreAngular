@@ -1,7 +1,13 @@
-<div *ngIf="dettail">
-  <h1> {{ dettail.titolo }} </h1>
-  <img [src]="dettail.image" alt="">
+<div *ngIf="dettail" class="container">
+  <div class="Sx">
+    <img [src]="dettail.image" alt="">
+  </div>
+  <div class="Dx"></div>
+</div>
+
+
+
+<!-- <h1> {{ dettail.titolo }} </h1>
   <h3>{{ dettail.categoria }}</h3>
   <p> {{ dettail.descrizione}} </p>
-  <p> <strong>{{ dettail.prezzo}}</strong> </p>
-</div>
+  <p> <strong>{{ dettail.prezzo}}</strong> </p> -->
