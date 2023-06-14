@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
-import { AllProducts } from './models/all-products';
+import { AllProducts, DettailProduct } from './models/all-products';
 
 @Injectable({
   providedIn: 'root'
@@ -39,13 +39,18 @@ export class DataService {
           prezzo: response.price,
           descrizione: response.description,
           categoria: response.category,
-          image: response.image
+          image: response.image,
+          valutazione: {
+            stelle: response.rating.rate,
+            ordinati: response.rating.count
+          }
         };
 
-        return prodottoVetrina as AllProducts;
+        return prodottoVetrina as DettailProduct;
       })
     );
   }
+
 
 }
 
