@@ -1,16 +1,23 @@
+
+*{
+  font-family: roboto;
+}
+
 .container{
   width: 100%;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.082);
   display: flex;
+
 }
 
 .Sx{
   width: 25%;
   height: 60%;
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgba(7, 7, 7, 0.151);
 }
 
 .Sx img{
@@ -19,25 +26,33 @@
 }
 
 .Dx{
+  padding: 30px;
   width: 75%;
   height: 60%;
-  background-color: rgb(0, 255, 106);
+  /* background-color: rgb(250, 250, 250); */
+  border-bottom: 1px solid rgba(7, 7, 7, 0.151);
+  position: relative;
 }
 
 h1{
-  font-family: roboto;
   letter-spacing: 5px;
 }
 
 h3{
-  font-family: roboto;
   letter-spacing: 3px;
   margin: 20px 0px;
   font-weight: 400;
+
+}
+
+.prezzo{
+position: absolute;
+bottom: 160px;
 }
 
 .descrizione{
-  font-family: roboto;
   font-weight: 200;
   letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
 }
