@@ -8,7 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { DettailComponent } from './home/dettail/dettail.component';
 import { HeaderComponent } from './header/header.component';
-import { CategoriaComponent } from './home/categoria/categoria.component'
+import { CategoriaComponent } from './home/categoria/categoria.component';
+import { MegaBannerComponent } from './home/mega-banner/mega-banner.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CategoriaComponent } from './home/categoria/categoria.component'
     HomeComponent,
     DettailComponent,
     HeaderComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    MegaBannerComponent
   ],
   imports: [
     BrowserModule,
