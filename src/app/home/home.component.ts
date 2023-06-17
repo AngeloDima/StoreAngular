@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   }
 
   getDati() {
-    this.apiServ.getAllProduct().subscribe((dati: AllProducts[]) => {
+    this.apiServ.getAllProductMax8().subscribe((dati: AllProducts[]) => {
       this.prodottoVetrina = dati;
       console.log(this.prodottoVetrina);
     });
