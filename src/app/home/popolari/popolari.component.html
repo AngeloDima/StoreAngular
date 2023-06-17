@@ -1,6 +1,6 @@
 <div *ngIf="p" class="box">
 
   <img [src]="p.image" alt="">
-  {{ p.titolo }}
 
+  <a routerLink="products/{{p.id}}">{{ p.titolo }}</a>
 </div>
