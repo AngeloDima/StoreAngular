@@ -11,7 +11,8 @@ import { HeaderComponent } from './header/header.component';
 import { CategoriaComponent } from './home/categoria/categoria.component';
 import { MegaBannerComponent } from './home/mega-banner/mega-banner.component';
 import { InfoCompComponent } from './home/info-comp/info-comp.component';
-import { PopolariComponent } from './home/popolari/popolari.component'
+import { PopolariComponent } from './home/popolari/popolari.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PopolariComponent } from './home/popolari/popolari.component'
     CategoriaComponent,
     MegaBannerComponent,
     InfoCompComponent,
-    PopolariComponent
+    PopolariComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
