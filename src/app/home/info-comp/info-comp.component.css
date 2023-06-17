@@ -1,0 +1,22 @@
+section{
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(0, 140, 255, 0.336);
+  margin: 50px 0px;
+  border-top: 2px solid rgba(0, 0, 0, 0.096);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoimg{
+  width: 250px;
+  height: 250px;
+  background-color: blanchedalmond;
+}
+
+.freccia{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(253, 194, 0);
+}

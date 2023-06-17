@@ -9,7 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DettailComponent } from './home/dettail/dettail.component';
 import { HeaderComponent } from './header/header.component';
 import { CategoriaComponent } from './home/categoria/categoria.component';
-import { MegaBannerComponent } from './home/mega-banner/mega-banner.component'
+import { MegaBannerComponent } from './home/mega-banner/mega-banner.component';
+import { InfoCompComponent } from './home/info-comp/info-comp.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MegaBannerComponent } from './home/mega-banner/mega-banner.component'
     DettailComponent,
     HeaderComponent,
     CategoriaComponent,
-    MegaBannerComponent
+    MegaBannerComponent,
+    InfoCompComponent
   ],
   imports: [
     BrowserModule,
