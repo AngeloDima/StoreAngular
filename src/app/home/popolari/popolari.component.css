@@ -14,10 +14,18 @@ a{
   padding: 10px 20px;
   width: 100%;
   height: 100%;
+  text-decoration: none;
 }
-
 
 img{
   width: 90%;
   height: 70%;
+}
+
+
+h3{
+  color: #232323;
+  margin-top: 30px;
+  font-size: 1em;
+  text-align: center;
 }
