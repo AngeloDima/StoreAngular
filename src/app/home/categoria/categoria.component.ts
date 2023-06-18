@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from 'src/app/data.service';
+import { AllProducts } from 'src/app/models/all-products';
 
 @Component({
   selector: 'app-categoria',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class CategoriaComponent {
 
+  @Input()
+  p?: any
 }

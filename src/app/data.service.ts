@@ -12,6 +12,7 @@ export class DataService {
 
   url = "https://fakestoreapi.com/products";
   urlLimit = "https://fakestoreapi.com/products?limit=8"
+  urlElettronica = "https://fakestoreapi.com/products/category/electronics"
   getAllProduct() {
     return this.http.get<any[]>(this.url).pipe(
       map((response: any[]) => {
@@ -28,8 +29,6 @@ export class DataService {
       })
     );
   }
-
-
 
   getAllProductMax8() {
     return this.http.get<any[]>(this.urlLimit).pipe(
@@ -70,6 +69,23 @@ export class DataService {
     );
   }
 
+
+  getElettronica() {
+    return this.http.get<any[]>(this.urlElettronica).pipe(
+      map((response: any[]) => {
+        return response.map(item => {
+          const prodottoVetrina = {
+            id: item.id,
+            titolo: item.title,
+            prezzo: item.price,
+            image: item.image
+          };
+
+          return prodottoVetrina as AllProducts;
+        });
+      })
+    );
+  }
 
 }
 

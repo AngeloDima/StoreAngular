@@ -13,6 +13,7 @@ import { MegaBannerComponent } from './home/mega-banner/mega-banner.component';
 import { InfoCompComponent } from './home/info-comp/info-comp.component';
 import { PopolariComponent } from './home/popolari/popolari.component';
 import { FooterComponent } from './footer/footer.component';
+import { ElettronicaComponent } from './elettronica/elettronica.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
     InfoCompComponent,
     PopolariComponent,
     FooterComponent,
+    ElettronicaComponent,
   ],
   imports: [
     BrowserModule,
