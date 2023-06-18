@@ -1,13 +1,25 @@
 <div *ngIf="dettail" class="container">
-  <div class="Sx">
+  <div class="box-img">
     <img [src]="dettail.image" alt="">
   </div>
-  <div class="Dx">
+
+  <div class="dx">
     <h1> {{ dettail.titolo }} </h1>
     <h3>{{ dettail.categoria }}</h3>
     <p class="descrizione"> {{ dettail.descrizione}} </p>
     <h3 class="prezzo">Prezzo: {{ dettail.prezzo}} €</h3>
-    <h3>Valutazione: {{ dettail.valutazione?.stelle }} su 5 </h3>
+    <h3 class="Val">Valutazione prodotto: {{ dettail.valutazione?.stelle }} su 5 </h3>
   </div>
-  <a routerLink="/">Cliccami</a>
 </div>
+
+
+
+<!-- <div class="Sx">
+
+</div>
+<div class="Dx">
+
+
+
+</div>
+<a routerLink="/">Cliccami</a> -->
