@@ -33,6 +33,19 @@
   height: 100%;
   background-color: #85A389;
   border-radius: 10px 0px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sx a{
+  color: rgb(0, 66, 41);
+  text-decoration: none;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.2rem;
+
 }
 
 
