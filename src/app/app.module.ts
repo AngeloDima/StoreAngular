@@ -14,6 +14,9 @@ import { InfoCompComponent } from './home/info-comp/info-comp.component';
 import { PopolariComponent } from './home/popolari/popolari.component';
 import { FooterComponent } from './footer/footer.component';
 import { ElettronicaComponent } from './elettronica/elettronica.component';
+import { GioielliComponent } from './gioielli/gioielli.component';
+import { UomoComponent } from './uomo/uomo.component';
+import { DonnaComponent } from './donna/donna.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { ElettronicaComponent } from './elettronica/elettronica.component';
     PopolariComponent,
     FooterComponent,
     ElettronicaComponent,
+    GioielliComponent,
+    UomoComponent,
+    DonnaComponent,
   ],
   imports: [
     BrowserModule,
