@@ -16,7 +16,7 @@ export class DataService {
   urlGioielli = "https://fakestoreapi.com/products/category/jewelery"
   urlUomo = "https://fakestoreapi.com/products/category/men's clothing"
   urlDonna = "https://fakestoreapi.com/products/category/women's clothing"
-
+  urlElettronica = "https://fakestoreapi.com/products/category/electronics"
 
   getAllProduct() {
     return this.http.get<any[]>(this.url).pipe(
@@ -35,7 +35,7 @@ export class DataService {
     );
   }
 
-  urlElettronica = "https://fakestoreapi.com/products/category/electronics"
+
 
   getElettronica(): Observable<AllProducts[]> {
     return this.http.get<any[]>(this.urlElettronica).pipe(
@@ -70,6 +70,39 @@ export class DataService {
     );
   }
 
+  getUomo(): Observable<AllProducts[]> {
+    return this.http.get<any[]>(this.urlUomo).pipe(
+      map((response: any[]) => {
+        return response.map(item => {
+          const prodottoVetrina = {
+            id: item.id,
+            titolo: item.title,
+            prezzo: item.price,
+            image: item.image
+          };
+
+          return prodottoVetrina as AllProducts;
+        });
+      })
+    );
+  }
+
+  getDonna(): Observable<AllProducts[]> {
+    return this.http.get<any[]>(this.urlDonna).pipe(
+      map((response: any[]) => {
+        return response.map(item => {
+          const prodottoVetrina = {
+            id: item.id,
+            titolo: item.title,
+            prezzo: item.price,
+            image: item.image
+          };
+
+          return prodottoVetrina as AllProducts;
+        });
+      })
+    );
+  }
 
 
   getAllProductMax8() {

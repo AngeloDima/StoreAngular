@@ -1,1 +1,11 @@
-<p>uomo works!</p>
+<div class="container" *ngIf="data">
+  <div class="card" *ngFor="let prodotto of data">
+    <div class="sx">
+      <h2> {{ prodotto.titolo }} </h2>
+      <h4> {{ prodotto.prezzo }} </h4>
+    </div>
+    <div class="dx">
+      <img [src]="prodotto.image" alt="">
+    </div>
+  </div>
+</div>
