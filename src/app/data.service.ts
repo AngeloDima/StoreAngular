@@ -53,6 +53,24 @@ export class DataService {
     );
   }
 
+  getGioielli(): Observable<AllProducts[]> {
+    return this.http.get<any[]>(this.urlGioielli).pipe(
+      map((response: any[]) => {
+        return response.map(item => {
+          const prodottoVetrina = {
+            id: item.id,
+            titolo: item.title,
+            prezzo: item.price,
+            image: item.image
+          };
+
+          return prodottoVetrina as AllProducts;
+        });
+      })
+    );
+  }
+
+
 
   getAllProductMax8() {
     return this.http.get<any[]>(this.urlLimit).pipe(
@@ -94,22 +112,7 @@ export class DataService {
   }
 
 
-  getGioielli() {
-    return this.http.get<any[]>(this.urlGioielli).pipe(
-      map((response: any[]) => {
-        return response.map(item => {
-          const prodottoVetrina = {
-            id: item.id,
-            titolo: item.title,
-            prezzo: item.price,
-            image: item.image
-          };
 
-          return prodottoVetrina as AllProducts;
-        });
-      })
-    );
-  }
 
 }
 
