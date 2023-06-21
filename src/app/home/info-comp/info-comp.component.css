@@ -15,8 +15,24 @@ section{
   background-color: #A2CDB0;
 }
 
+.up{
+  width: 100%;
+  height: 70%;
+  background-color: blanchedalmond;
+}
+
+.down{
+  width: 100%;
+  height: 30%;
+  background-color: rgb(233, 140, 0);
+}
+
+
+
 .freccia{
   width: 100px;
   height: 100px;
-  background-color: #FFD89C;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/25/25358.png?w=740&t=st=1687383464~exp=1687384064~hmac=3f256754bef0adab5a5b30bf208a7a91de8dd4e61ee82c66d201757bef9d69dd");
 }
