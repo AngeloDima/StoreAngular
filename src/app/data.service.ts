@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { AllProducts, DettailProduct } from './models/all-products';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,6 @@ export class DataService {
 
   url = "https://fakestoreapi.com/products";
   urlLimit = "https://fakestoreapi.com/products?limit=8"
-  urlElettronica = "https://fakestoreapi.com/products/category/electronics"
   urlGioielli = "https://fakestoreapi.com/products/category/jewelery"
   urlUomo = "https://fakestoreapi.com/products/category/men's clothing"
   urlDonna = "https://fakestoreapi.com/products/category/women's clothing"
@@ -34,6 +34,25 @@ export class DataService {
       })
     );
   }
+
+  urlElettronica = "https://fakestoreapi.com/products/category/electronics"
+
+  getElettronica(): Observable<AllProducts[]> {
+    return this.http.get<any[]>(this.urlElettronica).pipe(
+      map((response: any[]) => {
+        return response.map(item => {
+          const prodottoVetrina: AllProducts = {
+            id: item.id,
+            titolo: item.title,
+            prezzo: item.price,
+            image: item.image
+          };
+          return prodottoVetrina;
+        });
+      })
+    );
+  }
+
 
   getAllProductMax8() {
     return this.http.get<any[]>(this.urlLimit).pipe(
@@ -74,23 +93,6 @@ export class DataService {
     );
   }
 
-
-  getElettronica() {
-    return this.http.get<any[]>(this.urlElettronica).pipe(
-      map((response: any[]) => {
-        return response.map(item => {
-          const prodottoVetrina = {
-            id: item.id,
-            titolo: item.title,
-            prezzo: item.price,
-            image: item.image
-          };
-
-          return prodottoVetrina as AllProducts;
-        });
-      })
-    );
-  }
 
   getGioielli() {
     return this.http.get<any[]>(this.urlGioielli).pipe(
