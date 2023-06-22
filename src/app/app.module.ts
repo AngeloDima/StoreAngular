@@ -17,6 +17,7 @@ import { ElettronicaComponent } from './elettronica/elettronica.component';
 import { GioielliComponent } from './gioielli/gioielli.component';
 import { UomoComponent } from './uomo/uomo.component';
 import { DonnaComponent } from './donna/donna.component';
+import { LoginComponent } from './verifico/login/login.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { DonnaComponent } from './donna/donna.component';
     GioielliComponent,
     UomoComponent,
     DonnaComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
