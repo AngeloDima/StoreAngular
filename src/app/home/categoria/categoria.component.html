@@ -3,7 +3,18 @@
 
     <div class="box mb-3">
       <div class="sx">
-        <a routerLink="elettronica">Clicca per andare nel catalogo dei prodotti ELETTRONICI</a>
+
+
+        <div *ngIf="veri === true">
+          <a routerLink="elettronica">Clicca per andare nel catalogo dei prodotti ELETTRONICI</a>
+        </div>
+
+        <div *ngIf="veri === false">
+          <a routerLink="login">AAAAAAAAAAA</a>
+        </div>
+
+
+
       </div>
       <div class="dx">
         <img
