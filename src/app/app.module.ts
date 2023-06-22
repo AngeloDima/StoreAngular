@@ -18,6 +18,7 @@ import { GioielliComponent } from './gioielli/gioielli.component';
 import { UomoComponent } from './uomo/uomo.component';
 import { DonnaComponent } from './donna/donna.component';
 import { LoginComponent } from './verifico/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { LoginComponent } from './verifico/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

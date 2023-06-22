@@ -7,13 +7,14 @@ import { GioielliComponent } from './gioielli/gioielli.component';
 import { UomoComponent } from './uomo/uomo.component';
 import { DonnaComponent } from './donna/donna.component';
 import { LoginComponent } from './verifico/login/login.component';
+import { authGuard } from './verifico/auth.guard';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "products/:id", component: DettailComponent },
 
   //ROUTE CATEGORIE
-  { path: "elettronica", component: ElettronicaComponent },
+  { path: "elettronica", component: ElettronicaComponent, canActivate: [authGuard] },
   { path: "gioielli", component: GioielliComponent },
   { path: "uomo", component: UomoComponent },
   { path: "donna", component: DonnaComponent },

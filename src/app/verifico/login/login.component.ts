@@ -19,4 +19,9 @@ export class LoginComponent implements OnInit {
     })
   }
 
+
+  onVerifico() {
+
+  }
+
 }
