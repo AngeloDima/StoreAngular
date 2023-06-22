@@ -8,20 +8,21 @@ import { ServLocaleService } from '../serv-locale.service';
 })
 export class LoginComponent implements OnInit {
 
-  utenti: string[] = []
+  utenti: any[] = [];
 
   constructor(private uteAuth: ServLocaleService) { }
+
   ngOnInit(): void {
-    this.uteAuth.getUtentiLogin().subscribe(utente => {
-      this.utenti = utente
-      console.log(this.utenti);
-
-    })
+    this.uteAuth.getUtentiLogin().subscribe(utenti => {
+      this.utenti = utenti;
+      console.log("utenti verificati", this.utenti);
+    });
   }
 
+  nome: string = "";
+  password: string = "";
 
-  onVerifico() {
-
+  onVerifico(nome: string, password: string) {
+    this.uteAuth.login(nome, password);
   }
-
 }
