@@ -17,7 +17,7 @@ export class CategoriaComponent implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes['p'] && this.p !== undefined) {
+    if (changes['p']) {
       this.veri = this.logServ.utenteValido;
     }
   }
