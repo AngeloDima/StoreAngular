@@ -8,6 +8,7 @@ import { UomoComponent } from './uomo/uomo.component';
 import { DonnaComponent } from './donna/donna.component';
 import { LoginComponent } from './verifico/login/login.component';
 import { authGuard } from './verifico/auth.guard';
+import { AreaUtenteComponent } from './area-utente/area-utente.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -20,7 +21,11 @@ const routes: Routes = [
   { path: "donna", component: DonnaComponent },
 
   //LOGIN
-  { path: "login", component: LoginComponent }
+  { path: "login", component: LoginComponent },
+
+
+  //AREA UTENTE
+  { path: "auth/:nome", component: AreaUtenteComponent, canActivate: [authGuard] }
 ];
 
 @NgModule({

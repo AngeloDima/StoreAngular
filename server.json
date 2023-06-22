@@ -1,5 +1,9 @@
 {
-  "esistente": [
-    { "nome": "hudsifhsidhjfds", "password": "hudsifhsidhjfds" }
+  "UtenteVerificato": [
+    { "nome": "hudsifhsidhjfds", "password": "hudsifhsidhjfds" },
+    { "nome": "Angelo", "password": "Angelo" }
   ]
 }
+
+
+

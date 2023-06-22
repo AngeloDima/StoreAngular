@@ -9,8 +9,8 @@ export class ServLocaleService {
 
   constructor(private http: HttpClient) { }
 
-  urlLocale: string = "http://localhost:3000/esistente";
-  utenteLoggato: any[] = [];
+  urlLocale: string = "http://localhost:3000/UtenteVerificato";
+
   utenteValido: boolean = false;
 
   getUtentiLogin(): Observable<any[]> {
@@ -28,6 +28,9 @@ export class ServLocaleService {
       }
     });
   }
+
+
+
 }
 
 

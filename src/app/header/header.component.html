@@ -1,8 +1,14 @@
-<header>
-  <a routerLink="/">
-    <h4>HOME</h4>
-  </a>
-  <a routerLink="/login">
-    <h4>LOGIN</h4>
-  </a>
-</header>
+<div *ngIf="utenti">
+  <header>
+    <a routerLink="/">
+      <h4>HOME</h4>
+    </a>
+    <a routerLink="/login">
+      <h4>LOGIN</h4>
+    </a>
+
+    <a [routerLink]="'/auth/' + utenti[1].nome">
+      <h4>Area utente</h4>
+    </a>
+  </header>
+</div>

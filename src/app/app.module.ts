@@ -19,6 +19,7 @@ import { UomoComponent } from './uomo/uomo.component';
 import { DonnaComponent } from './donna/donna.component';
 import { LoginComponent } from './verifico/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { AreaUtenteComponent } from './area-utente/area-utente.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FormsModule } from '@angular/forms';
     UomoComponent,
     DonnaComponent,
     LoginComponent,
+    AreaUtenteComponent,
   ],
   imports: [
     BrowserModule,
