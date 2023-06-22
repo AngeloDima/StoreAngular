@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: "products/:id", component: DettailComponent },
 
   //ROUTE CATEGORIE
-  { path: "elettronica", component: ElettronicaComponent, canActivate: [authGuard] },
+  { path: "elettronica", component: ElettronicaComponent },
   { path: "gioielli", component: GioielliComponent },
   { path: "uomo", component: UomoComponent },
   { path: "donna", component: DonnaComponent },
