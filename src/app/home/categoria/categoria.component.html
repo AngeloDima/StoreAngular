@@ -5,13 +5,11 @@
       <div class="sx">
 
 
-        <div *ngIf="veri === true">
-          <a routerLink="elettronica">Clicca per andare nel catalogo dei prodotti ELETTRONICI</a>
-        </div>
+        <a *ngIf="veri === false" routerLink="login">AAAAAAAAAAA</a>
+        <a *ngIf="veri === true" routerLink="elettronica">Clicca per andare nel catalogo dei prodotti ELETTRONICI</a>
 
-        <div *ngIf="veri === false">
-          <a routerLink="login">AAAAAAAAAAA</a>
-        </div>
+
+
 
 
 

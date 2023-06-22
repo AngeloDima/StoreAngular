@@ -72,4 +72,11 @@
 
 
 
+.visibile {
+  display: block;
+}
+
+.nascosto {
+  display: none;
+}
 
