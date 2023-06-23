@@ -20,6 +20,7 @@ import { DonnaComponent } from './donna/donna.component';
 import { LoginComponent } from './verifico/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { AreaUtenteComponent } from './area-utente/area-utente.component';
+import { RegisterComponent } from './verifico/register/register.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AreaUtenteComponent } from './area-utente/area-utente.component';
     DonnaComponent,
     LoginComponent,
     AreaUtenteComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

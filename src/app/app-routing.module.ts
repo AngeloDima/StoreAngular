@@ -9,6 +9,7 @@ import { DonnaComponent } from './donna/donna.component';
 import { LoginComponent } from './verifico/login/login.component';
 import { authGuard } from './verifico/auth.guard';
 import { AreaUtenteComponent } from './area-utente/area-utente.component';
+import { RegisterComponent } from './verifico/register/register.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -22,6 +23,8 @@ const routes: Routes = [
 
   //LOGIN
   { path: "login", component: LoginComponent },
+  //REGISTER
+  { path: "register", component: RegisterComponent },
 
 
   //AREA UTENTE
