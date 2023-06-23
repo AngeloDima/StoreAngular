@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.uteAuth.getUtentiLogin().subscribe(utenti => {
       this.utenti = utenti;
-      console.log("utenti verificati", this.utenti);
+      // console.log("utenti verificati", this.utenti);
     });
   }
 

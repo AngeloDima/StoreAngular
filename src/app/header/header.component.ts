@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ServLocaleService } from '../verifico/serv-locale.service';
 
 @Component({
@@ -8,10 +8,14 @@ import { ServLocaleService } from '../verifico/serv-locale.service';
 })
 export class HeaderComponent {
   utenti: any[] = [];
+  utenteLoggato: any[] = []
 
-  constructor(private utenteServ: ServLocaleService) {
+
+  constructor(public utenteServ: ServLocaleService) {
     this.utenteServ.getUtentiLogin().subscribe(utenti => {
       this.utenti = utenti;
+      console.log("LISTA UTENTI", this.utenti);
     });
   }
+
 }

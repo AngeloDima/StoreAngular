@@ -6,12 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ServLocaleService {
+  urlLocale: string = "http://localhost:3000/UtenteVerificato";
+  utenti: any[] = [];
+  utenteValido: boolean = false;
+  utenteLoggato: any[] = [];
 
   constructor(private http: HttpClient) { }
-
-  urlLocale: string = "http://localhost:3000/UtenteVerificato";
-
-  utenteValido: boolean = false;
 
   getUtentiLogin(): Observable<any[]> {
     return this.http.get<any[]>(this.urlLocale);
@@ -23,15 +23,12 @@ export class ServLocaleService {
 
       if (check) {
         this.utenteValido = true;
+        this.utenteLoggato.push(check);
+        // console.log("Utente loggato:", check);
+        console.log("Utente loggato :", this.utenteLoggato);
       } else {
         this.utenteValido = false;
       }
     });
   }
-
-
-
 }
-
-
-
