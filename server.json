@@ -1,9 +1,19 @@
 {
   "UtenteVerificato": [
-    { "nome": "hudsifhsidhjfds", "password": "hudsifhsidhjfds" },
-    { "nome": "Angelo", "password": "Angelo" }
+    {
+      "id": 0,
+      "nome": "hudsifhsidhjfds",
+      "password": "hudsifhsidhjfds"
+    },
+    {
+      "id": 1,
+      "nome": "Angelo",
+      "password": "Angelo"
+    },
+    {
+      "id": 4,
+      "nome": "a",
+      "password": "a"
+    }
   ]
 }
-
-
-

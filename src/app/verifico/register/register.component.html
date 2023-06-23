@@ -1,1 +1,5 @@
-<p>register works!</p>
+<h1>Register</h1>
+<input type="number" name="" id="" [(ngModel)]="id">
+<input type="text" name="" id="" placeholder="nome..." [(ngModel)]="nomeReg">
+<input type="text" name="" id="" placeholder="password..." [(ngModel)]="passwordReg">
+<button (click)="addUtente(id, nomeReg, passwordReg)">Registrati</button>

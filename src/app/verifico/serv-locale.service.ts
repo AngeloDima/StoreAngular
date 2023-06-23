@@ -31,4 +31,21 @@ export class ServLocaleService {
       }
     });
   }
+
+  register(id: number, nome: string, password: string) {
+    const nuovoUtente = { id, nome, password };
+
+    this.http.post(this.urlLocale, nuovoUtente).subscribe(response => {
+      console.log("Utente registrato con successo:", response);
+
+      // Update the local array of users with the new user
+      this.utenti.push(nuovoUtente);
+    });
+  }
+
+
+
+
 }
+
+
