@@ -1,5 +1,13 @@
 <h1>Register</h1>
-<input type="number" name="" id="" [(ngModel)]="id">
-<input type="text" name="" id="" placeholder="nome..." [(ngModel)]="nomeReg">
-<input type="text" name="" id="" placeholder="password..." [(ngModel)]="passwordReg">
-<button (click)="addUtente(id, nomeReg, passwordReg)">Registrati</button>
+
+<div class="container">
+  <div class="box">
+    <label for="id">id</label>
+    <input type="number" name="" id="" [(ngModel)]="id">
+    <label for="nome">nome</label>
+    <input type="text" name="" id="" placeholder="nome..." [(ngModel)]="nomeReg">
+    <label for="password">password</label>
+    <input type="text" name="" id="" placeholder="password..." [(ngModel)]="passwordReg">
+    <button (click)="addUtente(id, nomeReg, passwordReg)">Registrati</button>
+  </div>
+</div>
