@@ -22,4 +22,6 @@ h4{
   font-weight: 500;
 }
 
-
+.hidden{
+  display: none;
+}
