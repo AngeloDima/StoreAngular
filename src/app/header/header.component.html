@@ -7,13 +7,12 @@
       <h4>LOGIN</h4>
     </a>
 
-    <div
-      [ngClass]="{'hidden': !utenteServ.utenteLoggato || utenteServ.utenteLoggato.length === 0 || !utenteServ.utenteLoggato[0].nome}">
-      <a *ngIf="utenteServ.utenteLoggato && utenteServ.utenteLoggato.length > 0 && utenteServ.utenteLoggato[0].nome"
-        [routerLink]="'/auth/' + utenteServ.utenteLoggato[0].nome">
-        Area Utente
-      </a>
-    </div>
+
+    <a *ngIf="utenteServ.utenteLoggato && utenteServ.utenteLoggato.length > 0 && utenteServ.utenteLoggato[0].nome"
+      [routerLink]="'/auth/' + utenteServ.utenteLoggato[0].nome">
+      Area Utente
+    </a>
+
 
 
 
