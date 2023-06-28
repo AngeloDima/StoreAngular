@@ -10,10 +10,6 @@ export class HeaderComponent implements OnInit {
   utenteLoggato: any[] = [];
 
 
-  ciao: boolean = true;
-
-
-
   constructor(public utenteServ: ServLocaleService) { }
 
   ngOnInit(): void {
